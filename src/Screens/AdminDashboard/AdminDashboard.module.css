@@ -1,0 +1,43 @@
+.admin-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    direction: rtl; /* For Arabic text */
+    text-align: right;
+}
+
+.admin-dashboard h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.location-name-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.location-name-section label {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.location-name-section input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.admin-dashboard hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+.admin-dashboard h2 {
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}

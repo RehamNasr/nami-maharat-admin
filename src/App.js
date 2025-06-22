@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { HeaderComponent } from './Components/HeaderComponent';
 import { FooterComponent } from './Components/Footer';
-import HomeScreen from './Screens/HomeScreen';
-import PlayersScreen from './Screens/PlayersScreen';
-import CartScreen from './Screens/CartScreen';
-import AboutScreen from './Screens/AboutScreen';
+
 
 import './App.css';
+import { AdminDashboard } from './Screens';
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState("HomeScreen");
@@ -85,23 +83,8 @@ function App() {
         cartItemCount={cartItems.length}
       />
 
-      {currentScreen === "HomeScreen" && <HomeScreen setappname={handleSetAppName} />}
-      {currentScreen === "PlayersScreen" && (
-        <PlayersScreen
-          setappname={handleSetAppName}
-          onAddToCart={handleAddToCart}
-        />
-      )}
-      {currentScreen === "AboutScreen" && <AboutScreen />} {/* <--- 2. Add conditional rendering for AboutScreen */}
 
-      {currentScreen === "CartScreen" && (
-        <CartScreen
-          cartItems={cartItems}
-          onUpdateQuantity={handleUpdateQuantity}
-          onRemoveFromCart={handleRemoveFromCart}
-          setappname={handleSetAppName}
-        />
-      )}
+     <AdminDashboard/>
       <FooterComponent />
 
       {/* Toast Notification Element */}
