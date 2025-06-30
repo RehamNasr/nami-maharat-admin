@@ -3,6 +3,7 @@ import React from 'react';
 import './styles.css';
 
 export const ProductTable = ({ products, onEdit, onDelete }) => {
+    console.log("products:::",products)
     return (
         <div className="product-table-container">
             {products.length === 0 ? (
